@@ -23,13 +23,13 @@ export default function FormData() {
     const departments = ["Computer Science", "Electrical and Electronics", "Mechanical Engineering", "Electronics and Communication", "Robotics and Artificial Intelligence", "Civil Engineering", "Architecture"]
     const recipients = ["Principal", "HOD"]
     return (
-        <main className="flex flex-col justify-center items-center bg-blue-200 h-screen ">
+        <main className="flex flex-col justify-center items-center bg-blue-500 m-1 h-screen ">
             <div className="flex flex-col justify-center items-center m-3 w-auto">
                 <h1 className="font-bold text-3xl">Welcome to GenLet</h1>
                 <h2 className="font-bold text- base">Generate any official letter in seconds without taking your
                     pen</h2>
             </div>
-            <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center bg-blue-200 h-screen">
+            <form onSubmit={handleSubmit} className="letterForm ">
                 <h1>form starts here</h1>
                 {/*Input Name*/}
                 <input
@@ -58,9 +58,9 @@ export default function FormData() {
                     value={formData.to}
                     onChange={handleChange}
                     required>
-                    <option value=""> Select your Recipient</option>
+                    <option  value=""> Select your Recipient</option>
                     {recipients.map((recipient, index) =>
-                        <option key={index} value={recipient}>{recipient}</option>)}
+                        <option  key={index} value={recipient}>{recipient}</option>)}
                 </select>
                 {/* a simple conditional is applied, so as to display the departments if and oln if the recipient is a head of a department*/}
                 {formData.to === "HOD" && (
