@@ -6,23 +6,20 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
+    overflow:hidden;
 }
-.letterForm{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: white;
-    gap:1rem;
-    padding: 1rem;
-    margin: 2rem;
+input,select{
+    border: black solid 1px;
+    border-radius: 20px;
+    height: auto;
+   max-width: 100%;
+    padding: 12px; /* Equivalent to p-3 in Tailwind */
+    outline: none; /* Remove default focus outline */
+}
 
-}
-input,select {
-    /*background-color: lightgreen;*/
-    /*padding: .5rem;*/
+input:focus,select:focus {
     border: none;
-    border-radius: 10px;
-    width: 100%;
+    outline: 2px solid #93C5FD; /* Equivalent to focus:outline-blue-300 */
 }
+
 
