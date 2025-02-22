@@ -1,25 +1,32 @@
 body {
-    background-color: lightseagreen;
+    @apply flex flex-col items-center justify-center h-screen w-full ;
+}
+
+main{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    margin:1rem;
+    height:100%;
+}
+#name{
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+
+}
+input, select, textarea {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
     width: 100%;
-    overflow:hidden;
-}
-input,select{
-    border: black solid 1px;
-    border-radius: 20px;
-    height: auto;
-   max-width: 100%;
-    padding: 12px; /* Equivalent to p-3 in Tailwind */
-    outline: none; /* Remove default focus outline */
+
 }
 
-input:focus,select:focus {
-    border: none;
-    outline: 2px solid #93C5FD; /* Equivalent to focus:outline-blue-300 */
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #3B82F6;
+    box-shadow: 0px 4px 8px rgba(59, 130, 246, 0.3);
+    /*transform: scale(1.1);*/
 }
-
-
