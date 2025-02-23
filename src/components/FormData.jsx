@@ -24,7 +24,7 @@ export default function FormData() {
     const recipients = ["Principal", "HOD"]
     return (
 
-        <main className="bg-gradient-to-b from-blue-400 to-blue-700 p-8 rounded-xl shadow-lg shadow-blue-500/50">
+        <main className="bg-gradient-to-b from-blue-400 to-blue-700 p-6 md:p-12 rounded-xl shadow-lg shadow-blue-500/50  ">
             <div className="cursorMap"/>
             <div className="flex flex-col justify-center items-center m-3 ">
                 <h1 className="text-black-900 text-3xl font-bold drop-shadow-md">
@@ -35,7 +35,7 @@ export default function FormData() {
                 </h2>
             </div>
             <form onSubmit={handleSubmit}
-                  className="flex flex-col gap-4 p-5 bg-white rounded-xl shadow-md">
+                  className="flex flex-col justify-center gap-4 p-5 bg-white rounded-xl shadow-md">
                 <div className="relative">
                     <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                     <div className="relative ">
@@ -56,7 +56,7 @@ export default function FormData() {
                     <div className="relative">
                         <select
                             name="fromDepartment"
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 appearance-none bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            // className="w-full px-4 py-3 bg-white focus:ring-2 focus:ring-blue-500  transition duration-200"
                             value={formData.fromDepartment}
                             onChange={handleChange}
                             required
@@ -133,7 +133,7 @@ export default function FormData() {
                 </div>
                 <button
                     type="submit"
-                    className="w-full rounded-xl sm:w-auto p-3 bg-blue-500 border self-center text-white font-semibold cursor-pointer transition-transform duration-300 ease-out hover:scale-110 text-lg hover:bg-white hover:text-blue-500 hover:border-blue-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-300"
+                    className="w-full rounded-xl sm:w-auto  px-5 py-3 bg-blue-500 border self-center text-white font-semibold cursor-pointer transition-transform duration-300 ease-out hover:scale-110 text-lg hover:bg-white hover:text-blue-500 hover:border-blue-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-300 hover:scale-105"
                 >
                     Generate letter
                 </button>

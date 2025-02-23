@@ -7,26 +7,22 @@ main{
     flex-direction: column;
     margin:1rem;
     height:100%;
-}
-#name{
-    width: 500px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 12px;
-    font-size: 16px;
 
 }
-input, select, textarea {
-    border: 1px solid #ddd;
+
+input, select, textarea,#name {
     border-radius: 10px;
     padding: 12px;
     font-size: 16px;
     width: 100%;
+    outline: black solid 1px;
+    transition: all;
 
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus,#name:focus {
     border: 2px solid #3B82F6;
-    box-shadow: 0px 4px 8px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    outline: none;
     /*transform: scale(1.1);*/
 }
